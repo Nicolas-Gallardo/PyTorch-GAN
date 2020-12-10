@@ -125,7 +125,7 @@ dataloader = DataLoader(
 )
 # Test data loader
 val_dataloader = DataLoader(
-    ImageDataset("/content/drive/MyDrive/cycleGonxoGan/" % opt.dataset_name, transforms_=transforms_, unaligned=True, mode="test"),
+    ImageDataset("/content/drive/MyDrive/cycleGonxoGan/" , transforms_=transforms_, unaligned=True, mode="test"),
     batch_size=5,
     shuffle=True,
     num_workers=1,
